@@ -1,0 +1,7 @@
+en:
+  inline_forms:
+    general:
+      application_title: Kunuku
+    devise:
+      title_for_devise: Kunuku
+      welcome: Welcome to Kunuku!

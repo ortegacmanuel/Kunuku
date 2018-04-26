@@ -1,4 +1,17 @@
 Rails.application.routes.draw do
+
+  root to: 'members#index'
+
+  resources :members do
+  post 'revert', :on => :member
+  get 'list_versions', :on => :member
+end
+
+  resources :delivery_points do
+  post 'revert', :on => :member
+  get 'list_versions', :on => :member
+end
+
   resources :inline_forms_translations do
   post 'revert', :on => :member
   get 'list_versions', :on => :member

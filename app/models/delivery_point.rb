@@ -13,9 +13,9 @@ class DeliveryPoint < ApplicationRecord
 
   def inline_forms_attribute_list
     @inline_forms_attribute_list ||= [
-      [ :name , "name", :text_field ], 
-      [ :image , "image", :image_field ], 
-      [ :adreess , "adreess", :text_area ], 
+      [ :name , "name", :text_field ],
+      [ :image , "image", :image_field ],
+      [ :adreess , "adreess", :text_area_without_ckeditor ], 
     ]
   end
 

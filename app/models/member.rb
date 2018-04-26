@@ -14,7 +14,7 @@ class Member < ApplicationRecord
   def inline_forms_attribute_list
     @inline_forms_attribute_list ||= [
       [ :name , "name", :text_field ],
-      [ :adreess , "adreess", :text_area ],
+      [ :adreess , "adreess", :text_area_without_ckeditor ],
       [ :delivery_point , "delivery_point", :dropdown ],
       [ :amount , "amount", :text_field ],
     ]
